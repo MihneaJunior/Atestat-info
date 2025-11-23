@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carti citite/recomandate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+                <a href="index.html">
+            Home Page
+                </a>
+
+                <a href="lifestyle.html">
+            Lifestyle
+                </a>
+                <a href="productivity.html">
+            Productivity
+                </a>
+            </nav>
+        <section id="books">
+            <h2>Cartile mele preferate</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="moveCarousel(-1)">❮</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel" id="carousel">
+                        <div class="book-card">
+                            <div class="book-cover">📖</div>
+                            <h3>Titlu</h3>
+                            <p class="author">Autor</p>
+                            <p class="review">Descriere</p>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover">📚</div>
+                            <h3>Titlu</h3>
+                            <p class="author">Autor</p>
+                            <p class="review">Descriere</p>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover">📕</div>
+                            <h3>Titlu</h3>
+                            <p class="author">Autor</p>
+                            <p class="review">Descriere</p>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover">📗</div>
+                            <h3>Titlu</h3>
+                            <p class="author">Autor</p>
+                            <p class="review">Descriere</p>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover">📘</div>
+                            <h3>Titlu</h3>
+                            <p class="author">Autor</p>
+                            <p class="review">Descriere</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1)">❯</button>
+            </div>
+            <div class="carousel-dots" id="dots"></div>
+        </section>
+    </div>
+</body>
+</html>
+
