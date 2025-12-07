@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofoliul Meu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hamburger-menu" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home Page</a>
+      <a href="carti.html">Carti</a>
+      <a href="lifestyle.html">Lifestyle</a>
+      <a href="productivity.html">Productivity</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+      <section id="contact">
+        <form class="contact-form" action="https://formspree.io/f/xovgnvjo" method="post">
+            <h2>Contacteaza-ma</h2>
+            <div class="form-input-container">
+
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+    
+            <div class="form-input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+    
+            <div class="form-input-container">
+                <label for="message">Mesaj:</label>
+                <textarea  id="message" name="message" rows="5" required></textarea>
+            </div>
+    
+            <button type="submit">Trimite</button>
+        </form>
+      </section>
+    <script src="script.js"></script>
+  </body>
+</html>
