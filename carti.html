@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carti citite/recomandate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hamburger-menu" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home Page</a>
+      <a href="carti.html">Carti</a>
+      <a href="lifestyle.html">Lifestyle</a>
+      <a href="productivity.html">Productivity</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+      <section id="books">
+        <h2>Cartile mele preferate</h2>
+        <div class="carousel-container">
+          <button class="carousel-button prev" onclick="moveCarousel(-1)">
+            ❮
+          </button>
+          <div class="carousel-wrapper">
+            <div class="carousel" id="carousel">
+              <div class="book-card">
+                <div class="book-card-front">
+                  <div
+                    class="book-cover"
+                    style="width: 150px; height: 200px; overflow: hidden"
+                  >
+                    <img
+                      src="https://cdn.dc5.ro/img-prod/25726938-0.jpeg"
+                      alt="coperta unei carti"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    />
+                  </div>
+                  <h3>Titlu</h3>
+                  <p class="author">Autor</p>
+                  <p class="review">Descriere</p>
+                </div>
+
+                <div class="book-card-back">
+                  <h3>Detalii despre carte</h3>
+                  <p>Text despre carte aici</p>
+                </div>
+              </div>
+
+              <div class="book-card">
+                <div class="book-card-front">
+                  <div
+                    class="book-cover"
+                    style="width: 150px; height: 200px; overflow: hidden"
+                  >
+                    <img
+                      src="https://carturesti.ro/img-prod/5193-1.jpeg"
+                      alt="coperta unei carti"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    />
+                  </div>
+
+                  <h3>Titlu</h3>
+                  <p class="author">Autor</p>
+                  <p class="review">Descriere</p>
+                </div>
+                <div class="book-card-back">
+                  <h3>Detalii despre carte</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Blanditiis recusandae eaque, delectus sed error alias nulla
+                    ex tempore odit eligendi nisi magni, enim quae, in
+                    perferendis perspiciatis vel quos libero! perferendis
+                    perspiciatis vel quos libero!
+                  </p>
+                </div>
+              </div>
+
+              <div class="book-card">
+                <div class="book-card-front">
+                  <div
+                    class="book-cover"
+                    style="width: 150px; height: 200px; overflow: hidden"
+                  >
+                    <img
+                      src="https://cdn.dc5.ro/img-prod/25654034-1.jpeg"
+                      alt="coperta unei carti"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    />
+                  </div>
+
+                  <h3>Titlu</h3>
+                  <p class="author">Autor</p>
+                  <p class="review">Descriere</p>
+                </div>
+                <div class="book-card-back">
+                  <h3>Detalii despre carte</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Blanditiis recusandae eaque, delectus sed error alias nulla
+                    ex tempore odit eligendi nisi magni, enim quae, in
+                    perferendis perspiciatis vel quos libero!
+                  </p>
+                </div>
+              </div>
+
+              <div class="book-card">
+                <div class="book-card-front">
+                  <div class="book-cover">📗</div>
+                  <h3>Titlu</h3>
+                  <p class="author">Autor</p>
+                  <p class="review">Descriere</p>
+                </div>
+                <div class="book-card-back">
+                  <h3>Detalii despre carte</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Blanditiis recusandae eaque, delectus sed error alias nulla
+                    ex tempore odit eligendi nisi magni, enim quae, in
+                    perferendis perspiciatis vel quos libero!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-button next" onclick="moveCarousel(1)">
+            ❯
+          </button>
+        </div>
+        <div class="carousel-dots" id="dots"></div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
