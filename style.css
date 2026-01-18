@@ -12,58 +12,43 @@ body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
 }
-.videos {
+
+.videos{
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 24px;
-  margin-top: 20px;
-  max-width: 820px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 24px auto 0;
 }
 
-/* fiecare video */
-.videos .video-container {
-  flex: 1;
-  min-width: 0;
-  max-width: 420px;
+.video-container{
+  width: 420px;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #222;
 }
 
-/* mobile */
-@media (max-width: 768px) {
-  .videos {
+.video-container iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px){
+  .videos{
     flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container{
+    width: 100%;
   }
 }
 
-/* container video (ramele youtube) */
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  margin-top: 16px;
-}
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-}
-
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-}
 
 .section-icon {
   align-items: center;
